@@ -1,0 +1,16 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.GameplayMessageRuntime.cpp.obj": [
+			"AsyncAction_ListenForGameplayMessage.cpp.obj",
+			"GameplayMessageRuntime.cpp.obj",
+			"GameplayMessageSubsystem.cpp.obj"
+		],
+		"Module.GameplayMessageRuntime.gen.cpp.obj": [
+			"AsyncAction_ListenForGameplayMessage.gen.cpp.obj",
+			"GameplayMessageRuntime.init.gen.cpp.obj",
+			"GameplayMessageSubsystem.gen.cpp.obj",
+			"GameplayMessageTypes2.gen.cpp.obj"
+		]
+	}
+}

@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-GameplayMessageRuntime-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UEProjects\LaryLearn\Intermediate\Build\Win64\LaryLearnEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h.obj"
+"D:\UEProjects\LaryLearn\Plugins\GameplayMessageRouter\Intermediate\Build\Win64\UnrealEditor\DebugGame\GameplayMessageRuntime\Module.GameplayMessageRuntime.cpp.obj"
+"D:\UEProjects\LaryLearn\Plugins\GameplayMessageRouter\Intermediate\Build\Win64\UnrealEditor\DebugGame\GameplayMessageRuntime\Module.GameplayMessageRuntime.gen.cpp.obj"
+"D:\UEProjects\LaryLearn\Plugins\GameplayMessageRouter\Intermediate\Build\Win64\UnrealEditor\DebugGame\GameplayMessageRuntime\Default.rc2.res"
+/OUT:"D:\UEProjects\LaryLearn\Plugins\GameplayMessageRouter\Intermediate\Build\Win64\UnrealEditor\DebugGame\GameplayMessageRuntime\UnrealEditor-GameplayMessageRuntime-Win64-DebugGame.lib"

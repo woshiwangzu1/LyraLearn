@@ -1,0 +1,29 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\intermediate\\build\\win64\\unrealeditor\\debuggame\\gameplaymessageruntime\\module.gameplaymessageruntime.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ueprojects\\larylearn\\intermediate\\build\\win64\\larylearneditor\\debuggame\\engine\\sharedpch.engine.nonoptimized.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\intermediate\\build\\win64\\unrealeditor\\debuggame\\gameplaymessageruntime\\definitions.gameplaymessageruntime.h",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\source\\gameplaymessageruntime\\private\\gameframework\\asyncaction_listenforgameplaymessage.cpp",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\source\\gameplaymessageruntime\\public\\gameframework\\asyncaction_listenforgameplaymessage.h",
+            "e:\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\blueprintasyncactionbase.h",
+            "e:\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\blueprintasyncactionbase.generated.h",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\source\\gameplaymessageruntime\\public\\gameframework\\gameplaymessagesubsystem.h",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\source\\gameplaymessageruntime\\public\\gameframework\\gameplaymessagetypes2.h",
+            "e:\\ue_5.0\\engine\\source\\runtime\\gameplaytags\\classes\\gameplaytagcontainer.h",
+            "e:\\ue_5.0\\engine\\source\\runtime\\core\\public\\misc\\comparisonutility.h",
+            "e:\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplaytags\\gameplaytagcontainer.generated.h",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplaymessageruntime\\gameplaymessagetypes2.generated.h",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplaymessageruntime\\gameplaymessagesubsystem.generated.h",
+            "e:\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\cancellableasyncaction.h",
+            "e:\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\cancellableasyncaction.generated.h",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplaymessageruntime\\asyncaction_listenforgameplaymessage.generated.h",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\source\\gameplaymessageruntime\\private\\gameframework\\gameplaymessageruntime.cpp",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\source\\gameplaymessageruntime\\private\\gameframework\\gameplaymessagesubsystem.cpp"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

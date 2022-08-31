@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-GameplayMessageNodes-0002-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UEProjects\LaryLearn\Intermediate\Build\Win64\LaryLearnEditor\DebugGame\UnrealEd\SharedPCH.UnrealEd.NonOptimized.ShadowErrors.h.obj"
+"D:\UEProjects\LaryLearn\Plugins\GameplayMessageRouter\Intermediate\Build\Win64\UnrealEditor\DebugGame\GameplayMessageNodes\Module.GameplayMessageNodes.cpp.obj"
+"D:\UEProjects\LaryLearn\Plugins\GameplayMessageRouter\Intermediate\Build\Win64\UnrealEditor\DebugGame\GameplayMessageNodes\Module.GameplayMessageNodes.gen.cpp.obj"
+"D:\UEProjects\LaryLearn\Plugins\GameplayMessageRouter\Intermediate\Build\Win64\UnrealEditor\DebugGame\GameplayMessageNodes\Default.rc2.res"
+/OUT:"D:\UEProjects\LaryLearn\Plugins\GameplayMessageRouter\Intermediate\Build\Win64\UnrealEditor\DebugGame\GameplayMessageNodes\UnrealEditor-GameplayMessageNodes-0002-Win64-DebugGame.lib"

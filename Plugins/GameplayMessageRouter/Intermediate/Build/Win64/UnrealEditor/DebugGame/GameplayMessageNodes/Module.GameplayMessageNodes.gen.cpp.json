@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\intermediate\\build\\win64\\unrealeditor\\debuggame\\gameplaymessagenodes\\module.gameplaymessagenodes.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\ueprojects\\larylearn\\intermediate\\build\\win64\\larylearneditor\\debuggame\\unrealed\\sharedpch.unrealed.nonoptimized.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\intermediate\\build\\win64\\unrealeditor\\debuggame\\gameplaymessagenodes\\definitions.gameplaymessagenodes.h",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplaymessagenodes\\gameplaymessagenodes.init.gen.cpp",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplaymessagenodes\\k2node_asyncaction_listenforgameplaymessages.gen.cpp",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\source\\gameplaymessagenodes\\public\\k2node_asyncaction_listenforgameplaymessages.h",
+            "e:\\ue_5.0\\engine\\source\\editor\\blueprintgraph\\classes\\k2node_asyncaction.h",
+            "e:\\ue_5.0\\engine\\source\\editor\\blueprintgraph\\classes\\k2node_baseasynctask.h",
+            "e:\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintgraph\\k2node_baseasynctask.generated.h",
+            "e:\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintgraph\\k2node_asyncaction.generated.h",
+            "d:\\ueprojects\\larylearn\\plugins\\gameplaymessagerouter\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplaymessagenodes\\k2node_asyncaction_listenforgameplaymessages.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
