@@ -12,7 +12,8 @@
 				"Engine",
 				"GameplayAbilities",
 				"ModularGameplay",
-				"EnhancedInput"
+				"EnhancedInput",
+				"CommonGame"
 			]
 		}
 	],
@@ -42,6 +43,14 @@
 		},
 		{
 			"Name": "GameplayMessageRouter",
+			"Enabled": true
+		},
+		{
+			"Name": "CommonGame",
+			"Enabled": true
+		},
+		{
+			"Name": "CommonUser",
 			"Enabled": true
 		}
 	]

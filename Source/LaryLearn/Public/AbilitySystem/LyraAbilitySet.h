@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameplayAbilitySpec.h"
 #include "Engine/DataAsset.h"
-#include "LyraAbilityAsset.generated.h"
+#include "LyraAbilitySet.generated.h"
 
 class ULyraAbilitySystemComponent;
 class ULyraGameplayAbility;

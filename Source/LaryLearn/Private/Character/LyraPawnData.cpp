@@ -3,3 +3,8 @@
 
 #include "Character/LyraPawnData.h"
 
+ULyraPawnData::ULyraPawnData(const FObjectInitializer& ObjectInitializer)
+	:Super(ObjectInitializer)
+{
+	
+}
