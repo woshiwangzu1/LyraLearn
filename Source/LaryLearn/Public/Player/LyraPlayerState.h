@@ -6,6 +6,7 @@
 #include "ModularPlayerState.h"
 #include "AbilitySystemInterface.h"
 #include "AbilitySystem/LyraAbilitySystemComponent.h"
+#include "Character/LyraPawnData.h"
 
 #include "LyraPlayerState.generated.h"
 /**
@@ -25,4 +26,7 @@ public:
 private:
 	UPROPERTY(VisibleAnywhere, Category= "Lyra|PlayerState")
 	ULyraAbilitySystemComponent* AbilitySystemComponent;
+
+	UPROPERTY(VisibleAnywhere, Category= "Lyra|PlayerState")
+	ULyraPawnData* DefaultPawnData;
 };

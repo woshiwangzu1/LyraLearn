@@ -3,14 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/GameModeBase.h"
-#include "LaryLearnGameModeBase.generated.h"
+#include "GameFramework/GameMode.h"
+#include "LaryLearnGameMode.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class LARYLEARN_API ALaryLearnGameModeBase : public AGameModeBase
+class LARYLEARN_API ALaryLearnGameMode : public AGameMode
 {
 	GENERATED_BODY()
 	

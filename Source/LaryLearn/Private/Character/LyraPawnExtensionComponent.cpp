@@ -5,6 +5,7 @@
 
 #include "AbilitySystem/LyraAbilitySystemComponent.h"
 #include "Net/UnrealNetwork.h"
+#include "System/LyraAssetManager.h"
 
 
 ULyraPawnExtensionComponent::ULyraPawnExtensionComponent(const FObjectInitializer& ObjectInitializer)
@@ -14,7 +15,7 @@ ULyraPawnExtensionComponent::ULyraPawnExtensionComponent(const FObjectInitialize
 	PrimaryComponentTick.bCanEverTick = false;
 
 	SetIsReplicatedByDefault(true);
-
+	
 	PawnData = nullptr;
 	AbilitySystemComponent = nullptr;
 	bPawnReadyToInitialize = false;
@@ -30,13 +31,15 @@ void ULyraPawnExtensionComponent::GetLifetimeReplicatedProps(TArray<FLifetimePro
 void ULyraPawnExtensionComponent::OnRegister()
 {
 	Super::OnRegister();
-
+	
 	const APawn* Pawn = GetPawn<APawn>();
 	ensureAlwaysMsgf((Pawn != nullptr), TEXT("LyraPawnExtensionComponent on [%s] can only be added to Pawn actors."), *GetNameSafe(GetOwner()));
 
 	TArray<UActorComponent*> PawnExtensionComponents;
 	Pawn->GetComponents(ULyraPawnExtensionComponent::StaticClass(), PawnExtensionComponents);
 	ensureAlwaysMsgf((PawnExtensionComponents.Num() == 1), TEXT("Only one LyraPawnExtensionComponent should exist on [%s]."), *GetNameSafe(GetOwner()));
+
+
 }
 
 void ULyraPawnExtensionComponent::SetPawnData(const ULyraPawnData* InPawnData)
@@ -176,6 +179,7 @@ void ULyraPawnExtensionComponent::HandlePlayerStateReplicated()
 
 void ULyraPawnExtensionComponent::SetupPlayerInputComponent()
 {
+	SetPawnData(ULyraAssetManager::Get().GetDefaultPawnData());
 	CheckPawnReadyToInitialize();
 }
 

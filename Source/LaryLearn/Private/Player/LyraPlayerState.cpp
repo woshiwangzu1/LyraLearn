@@ -16,7 +16,7 @@ ALyraPlayerState::ALyraPlayerState(const FObjectInitializer& ObjectInitializer)
 	CreateDefaultSubobject<UHealthAttributeSet>(TEXT("HealthSet"));
 	CreateDefaultSubobject<UCombatAttributeSet>(TEXT("CombatSet"));
 	NetUpdateFrequency = 100.0f;
-
+	
 }
 
 
