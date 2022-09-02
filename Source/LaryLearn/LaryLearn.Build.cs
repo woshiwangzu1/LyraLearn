@@ -20,11 +20,13 @@ public class LaryLearn : ModuleRules
 				"GameplayTasks",
 				"GameplayTags",
 				"GameFeatures",
-				"EnhancedInput",
-				"CommonUI"
+				"EnhancedInput"
 			});
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "GameplayMessageRuntime" });
+		PrivateDependencyModuleNames.AddRange(new string[] { 
+			"GameplayMessageRuntime",
+			"CommonUI",
+			"CommonInput", });
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });

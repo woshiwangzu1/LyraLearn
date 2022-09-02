@@ -3,15 +3,17 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "EnhancedInputSubsystemInterface.h"
 #include "Character/LyraPawnComponent.h"
 #include "LyraHeroComponent.generated.h"
 
 
+struct FGameplayTag;
 struct FInputActionValue;
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable, Meta=(BlueprintSpawnableComponent))
 class LARYLEARN_API ULyraHeroComponent : public ULyraPawnComponent
 {
 	GENERATED_BODY()
@@ -42,14 +44,15 @@ protected:
 	virtual void OnRegister() override;
 
 	virtual bool IsPawnComponentReadyToInitialize() const override;
-
+	void OnPawnReadyToInitialize();
 	virtual void BeginPlay() override;
 
 	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 
 	virtual void InitializePlayerInput(UInputComponent* PlayerInputComponent);
 
-
+	void Input_AbilityInputTagPressed(FGameplayTag InputTag);
+	void Input_AbilityInputTagReleased(FGameplayTag InputTag);
 	
 	void Input_Move(const FInputActionValue& InputActionValue);
 	void Input_LookMouse(const FInputActionValue& InputActionValue);
@@ -57,6 +60,10 @@ protected:
 	void Input_Crouch(const FInputActionValue& InputActionValue);
 	void Input_AutoRun(const FInputActionValue& InputActionValue);
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "HeroComponent|Input")
+	TObjectPtr<UInputMappingContext> DefaultInputMappingContext = nullptr;
+
+	
 protected:
 	// True when the pawn has fully finished initialization
 	bool bPawnHasInitialized;
