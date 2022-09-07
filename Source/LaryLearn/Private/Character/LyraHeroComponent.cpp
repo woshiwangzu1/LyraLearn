@@ -76,11 +76,12 @@ bool ULyraHeroComponent::IsPawnComponentReadyToInitialize() const
 
 void ULyraHeroComponent::OnPawnReadyToInitialize()
 {
-	if (!ensure(!bPawnHasInitialized))
-	{
-		// Don't initialize twice
-		return;
-	}
+	//TODO
+	// if (!ensure(!bPawnHasInitialized))
+	// {
+	// 	// Don't initialize twice
+	// 	return;
+	// }
 
 	APawn* Pawn = GetPawn<APawn>();
 	if (!Pawn)
@@ -213,7 +214,7 @@ void ULyraHeroComponent::InitializePlayerInput(UInputComponent* PlayerInputCompo
 
 void ULyraHeroComponent::Input_AbilityInputTagPressed(FGameplayTag InputTag)
 {
-	if (const APawn* Pawn = GetPawn<APawn>())
+ 	if (const APawn* Pawn = GetPawn<APawn>())
 	{
 		if (const ULyraPawnExtensionComponent* PawnExtComp = ULyraPawnExtensionComponent::FindPawnExtensionComponent(Pawn))
 		{

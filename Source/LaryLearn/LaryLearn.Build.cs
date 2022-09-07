@@ -20,7 +20,8 @@ public class LaryLearn : ModuleRules
 				"GameplayTasks",
 				"GameplayTags",
 				"GameFeatures",
-				"EnhancedInput"
+				"EnhancedInput",
+				"NetCore"
 			});
 
 		PrivateDependencyModuleNames.AddRange(new string[] { 

@@ -2,8 +2,11 @@
 
 
 #include "Player/LyraPlayerController.h"
+
+#include "AbilitySystemComponent.h"
 #include "AbilitySystemGlobals.h"
 #include "CommonInputSubsystem.h"
+#include "AbilitySystem/LyraAbilitySystemComponent.h"
 #include "Player/LyraPlayerState.h"
 
 ALyraPlayerController::ALyraPlayerController(const FObjectInitializer& ObjectInitializer)
@@ -233,11 +236,11 @@ void ALyraPlayerController::PreProcessInput(const float DeltaTime, const bool bG
 }
 void ALyraPlayerController::PostProcessInput(const float DeltaTime, const bool bGamePaused)
 {
-	//@TODO
-	// if (ULyraAbilitySystemComponent* LyraASC = GetLyraAbilitySystemComponent())
-	// {
-	// 	LyraASC->ProcessAbilityInput(DeltaTime, bGamePaused);
-	// }
+	
+	if (ULyraAbilitySystemComponent* LyraASC = GetLyraAbilitySystemComponent())
+	{
+		LyraASC->ProcessAbilityInput(DeltaTime, bGamePaused);
+	}
 
 	Super::PostProcessInput(DeltaTime, bGamePaused);
 }

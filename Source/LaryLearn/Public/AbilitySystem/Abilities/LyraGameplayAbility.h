@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Abilities/GameplayAbility.h"
 #include "AbilitySystem/LyraAbilitySystemComponent.h"
+#include "Character/LyraCharacter.h"
 #include "LyraGameplayAbility.generated.h"
 
 /**
@@ -23,5 +24,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Lyra|Ability")
 	ULyraAbilitySystemComponent* GetLyraAbilitySystemComponentFromActorInfo() const;
 
-	
+	UFUNCTION(BlueprintCallable, Category = "Lyra|Ability")
+	ALyraCharacter* GetLyraCharacterFromActorInfo() const;
 };

@@ -53,6 +53,10 @@
 		{
 			"Name": "CommonUser",
 			"Enabled": true
+		},
+		{
+			"Name": "TestFeature",
+			"Enabled": true
 		}
 	]
 }

@@ -13,3 +13,8 @@ ULyraAbilitySystemComponent* ULyraGameplayAbility::GetLyraAbilitySystemComponent
 {
 	return (CurrentActorInfo ? Cast<ULyraAbilitySystemComponent>(CurrentActorInfo->AbilitySystemComponent.Get()): nullptr);
 }
+
+ALyraCharacter* ULyraGameplayAbility::GetLyraCharacterFromActorInfo() const
+{
+	return (CurrentActorInfo ? Cast<ALyraCharacter>(CurrentActorInfo->AvatarActor.Get()) : nullptr);
+}
